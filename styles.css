@@ -1,0 +1,158 @@
+body {
+     background-image: url(assets/images/tile.jpg);
+}
+
+.input-task {
+    direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    
+}
+
+#title-box {
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size:larger;
+    font-weight: 1800;
+    justify-content: center; 
+    align-items: center;
+    color: rgb(20, 8, 9);
+    font: 900;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+    color: rgb(94, 11, 24); 
+    text-align: center;
+    text-decoration: underline;
+    font-family: cursive;
+    font-weight: bolder; 
+    font-size: 480px; 
+}
+
+#input-container {
+    height: 250px;
+    display:flex;
+    justify-content:center;
+}
+
+form.box {
+    width: 900px;
+}
+
+.input-box {
+    background-image: url(assets/images/formbg.jpg);
+    display: block;
+    background-repeat: repeat-y;
+    text-align: right;
+    padding: 20px ;
+    direction: rtl;
+}
+
+td{
+    text-align: right;
+    font-weight: bold;
+}
+
+.fade-in-image {
+    display: inline-block;
+    background-image: url(assets/images/notebg.png);
+    background-size: cover;
+    margin-left: 10px;
+     /* margin-bottom: 30px; */
+    margin-top: 0px;
+    width: 260px;
+    height: 359px;
+    animation: fadeIn 15s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+.dellButton {
+    /* position: sticky; */
+    /* top: 800px; */
+    /* bottom: 800px; */
+    width: 50px;
+    height: 85px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: transparent;
+    border: none;
+    transform: scale(2);
+ }
+
+ li:first-child {
+   text-align: right;
+      
+ }
+
+ .fade-in-image:hover .dellButton {
+    opacity: 1;
+}
+
+.textNote{
+    color: rgb(15, 51, 8); 
+    text-decoration:rgb(167, 117, 134) ;
+    font-size: 18px; 
+    text-align: right;
+    background-color: palegoldenrod;
+    width: 195px;
+    height: 200px;
+    word-wrap: break-word;
+    overflow:auto;
+    padding-top: 5px;
+    
+  }
+
+.dateTimeNote{
+    color: rgb(70, 18, 18);
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    top: 10px; 
+    font-weight: 800;
+}
+
+.idNote{
+  display: none;
+}
+
+#timeInput{
+  position: relative;
+  top: 9px;
+}
+
+.textNoteInP{
+  width: 100%;
+  height: fit-content;
+}
