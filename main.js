@@ -26,7 +26,8 @@ function saveNote() {
   existingNotesArray.push(newNote);
   saveNotesArrayToStorage(existingNotesArray);
   displayNotesFromStorage();
-
+  // this needs to be outside
+  // and in a function/
   document.getElementById("todoInput").value = "";
   document.getElementById("dateInput").value = "";
   document.getElementById("timeInput").value = "";
