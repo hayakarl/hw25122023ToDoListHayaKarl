@@ -26,7 +26,8 @@ function saveNote() {
   existingNotesArray.push(newNote);
   saveNotesArrayToStorage(existingNotesArray);
   displayNotesFromStorage();
-
+  // this needs to be outside
+  // and in a function/
   document.getElementById("todoInput").value = "";
   document.getElementById("dateInput").value = "";
   document.getElementById("timeInput").value = "";
@@ -116,7 +117,7 @@ function isDateAndHourPassed(note){//date,time){
 function validationInput(){
   const inputTxt = document.getElementById("todoInput")
   const value = inputTxt.value
-
+  // return just value!==""
   if (value===""){
     return false
   }
@@ -144,7 +145,7 @@ function hideErrorAlert(){
 function validationDate(){
   const inputDate = document.getElementById("dateInput")
   const value = inputDate.value
-
+  // again return value !==""
   if (value===""){
     return false
   }
@@ -172,7 +173,7 @@ function hideErrorAlertDate(){
 function validationTime(){
   const inputTxt = document.getElementById("timeInput")
   const value = inputTxt.value
-
+  // again return value !==""
   if (value===""){
     return false
   }
