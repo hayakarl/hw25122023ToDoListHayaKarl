@@ -117,7 +117,7 @@ function validationInput(){
   const inputTxt = document.getElementById("todoInput")
   const value = inputTxt.value
 
-  if (value===""){
+  if (value==""){
     return false
   }
   return true
@@ -145,7 +145,7 @@ function validationDate(){
   const inputDate = document.getElementById("dateInput")
   const value = inputDate.value
 
-  if (value===""){
+  if (value==""){
     return false
   }
   return true
@@ -173,7 +173,7 @@ function validationTime(){
   const inputTxt = document.getElementById("timeInput")
   const value = inputTxt.value
 
-  if (value===""){
+  if (value==""){
     return false
   }
   return true
